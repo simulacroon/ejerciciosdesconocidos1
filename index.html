@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#091910">
+
+  <meta name="description" content="Ejercicios Desconocidos — cine, exhibición, formación y producción audiovisual desde el Llano.">
+
+  <title>Ejercicios Desconocidos — Cine y territorio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <main>
+
+    <!-- HOME: el carrusel existe solo dentro de esta sección -->
+
+    <section id="index" class="hero" aria-label="Inicio">
+
+      <aside class="cartelera" aria-label="Cartelera en exhibición">
+
+        <div class="cartelera-tools"><span>☷ MENÚ</span><span>▦ GRID</span><span>ⓘ INFO</span></div>
+
+        <div class="cartelera-heading"><span>EN EXHIBICIÓN</span><span id="film-count">(00)</span></div>
+
+        <div class="cartelera-viewport" id="cartelera-viewport" tabindex="0" aria-label="Cartelera de películas en movimiento continuo">
+
+          <div class="cartelera-track" id="cartelera-track"></div>
+
+        </div>
+
+        <div class="cartelera-footer"><button id="toggle-carousel" type="button" aria-pressed="false">Ⅱ PAUSAR</button><span>DESLIZA ↕</span></div>
+
+      </aside>
+
+
+
+      <div class="hero-main">
+
+        <img class="hero-photo" src="assets/piedemonte.png" alt="Paisaje del piedemonte llanero" aria-hidden="true">
+
+        <div class="hero-tint"></div>
+
+        <div class="hero-top"><span>ARCHIVO<br>AUDIOVISUAL<br>DEL LLANO</span><span>YOPAL, COL.<br>05.3370° N<br>72.3973° W</span></div>
+
+        <nav class="hero-menu" aria-label="Navegación principal">
+
+          <a href="#index"><small>01</small><strong>INDEX</strong><span>●</span></a>
+
+          <a href="#exhibicion"><small>02</small><strong>EXHIBICIÓN</strong><span>↗</span></a>
+
+          <a href="#formacion"><small>03</small><strong>FORMACIÓN</strong><span>↗</span></a>
+
+          <a href="#produccion"><small>04</small><strong>PRODUCCIÓN</strong><span>↗</span></a>
+
+          <a href="#servicios"><small>05</small><strong>OTROS SERVICIOS</strong><span>↗</span></a>
+
+          <a href="#nosotros"><small>06</small><strong>NOSOTROS</strong><span>↗</span></a>
+
+        </nav>
+
+        <div class="hero-brand">
+
+
+          <div class="logo-placeholder"><img src="assets/ED-27.svg" alt="Ejercicios Desconocidos"></div>
+        </div>
+
+        <div class="hero-bottom"><a href="#exhibicion">VER TRÁILER ↗</a><a href="#exhibicion">SCROLL ↓</a></div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- EXHIBICIÓN: portada completa, mosaico y archivo flotante -->
+
+    <section id="exhibicion" class="page exhibition" aria-labelledby="exhibition-title">
+
+      <div class="section-meta"><span>02 / EXHIBICIÓN</span><span>PELÍCULAS, ENCUENTROS Y ESPACIOS DE PROYECCIÓN</span></div>
+
+      <div class="exhibition-stage">
+
+        <div class="exhibition-grid" id="exhibition-grid">
+
+          <!-- Las mismas películas del carrusel se generan aquí desde script.js. -->
+        </div>
+
+        <h2 id="exhibition-title" class="exhibition-title">EXHIBICIÓN</h2>
+
+        <div class="archive-panel">
+
+          <div class="archive-thumbs">
+            <img src="img/POSTER2026.png" alt="Cartel vertical de la temporada de exhibición 2026" loading="lazy">
+          </div>
+          <div class="archive-line"><span>ARCHIVO DE EXHIBICIONES</span><span>TEMPORADA 2026</span></div>
+
+          <p>Un recorrido por los espacios donde nuestras películas han sido proyectadas. Encuentros, territorios y públicos.</p>
+
+          <a href="mailto:contacto@ejerciciosdesconocidos.com?subject=Exhibiciones%20anteriores">VER VERSIONES ANTERIORES ↗</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section id="formacion" class="page formation" aria-labelledby="formation-title">
+
+      <div class="section-meta"><span>03 / FORMACIÓN</span><span>TALLERES Y LABORATORIOS</span></div>
+
+      <h2 id="formation-title" class="section-title">FORMACIÓN</h2>
+
+      <p class="section-intro">Espacios de aprendizaje, creación colectiva e intercambio de saberes alrededor del cine y la imagen.</p>
+
+      <div class="formation-gallery">
+
+        <figure><img src="img/talleres.JPG" alt="Naturaleza y territorio"><figcaption>01 / TERRITORIO</figcaption></figure>
+
+        <figure><img src="img/lab.JPG" alt="Árboles y luz"><figcaption>02 / LABORATORIOS</figcaption></figure>
+
+        <figure><img src="img/formacion.JPG" alt="Agua y movimiento"><figcaption>03 / CREACIÓN</figcaption></figure>
+
+      </div>
+
+    </section>
+
+
+
+    <section id="produccion" class="page production" aria-labelledby="production-title">
+
+      <div class="section-meta"><span>04 / PRODUCCIÓN</span><span>PELÍCULAS Y PROCESOS</span></div>
+
+      <h2 id="production-title" class="section-title">PRODUCCIÓN</h2>
+
+      <div class="production-layout">
+
+        <article class="production-feature">
+
+          <div class="production-image ratio-wide"><img src= "img/corto.jpg" alt="Intentos por dejarse caer dentro"></div>
+
+          <div class="production-copy"><span>01 / CORTO </span><h3>Intentos por dejarse caer dentro</h3><p>Un grupo de personas sobrelleva sus vidas al ser afectadas por su existir. Experimentan álgidos momentos políticos en su país mientras les surgen cuestiones sobre la compresión de la realidad.</p><a href="mailto:contacto@ejerciciosdesconocidos.com?subject=Información%20Río%20arriba">CONOCER EL PROYECTO ↗</a></div>
+
+        </article>
+
+        <article class="production-feature">
+
+          <div class="production-image ratio-classic"><img src="img/piedemonte.png" alt="Cuando la llanura encuentra el piedemonte"></div>
+
+          <div class="production-copy"><span>02 / FICCIÓN</span><h3>Cuando la llanura encuentra el piedemonte</h3><p>Al borde de las cordilleras orientales de Colombia, donde se unen el relieve y la llanura, un grupo de jóvenes pasa sus días contemplando la existencia orgánica del planeta. Mientras tanto, un hombre huye y su humanidad se desvanece. La fluidez del agua recoge sus cuerpos y los atraviesa.</p><a href="mailto:contacto@ejerciciosdesconocidos.com?subject=Información%20Tierra%20que%20escucha">CONOCER EL PROYECTO ↗</a></div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <section id="servicios" class="page services" aria-labelledby="services-title">
+
+      <div class="section-meta"><span>05 / OTROS SERVICIOS</span><span>COLABORACIONES AUDIOVISUALES</span></div>
+
+      <h2 id="services-title" class="section-title">OTROS<br>SERVICIOS</h2>
+
+      <div class="services-grid">
+
+        <div><span>01</span><h3>REALIZACIÓN AUDIOVISUAL</h3><p>Desarrollo de piezas audiovisuales y acompañamiento creativo.</p></div>
+
+        <div><span>02</span><h3>REGISTRO Y DOCUMENTACIÓN</h3><p>Memoria audiovisual de procesos, eventos y encuentros.</p></div>
+
+        <div><span>03</span><h3>MEDIACIÓN Y PROGRAMACIÓN</h3><p>Diseño de experiencias y espacios de encuentro alrededor del cine.</p></div>
+
+      </div>
+
+    </section>
+
+
+
+    <section id="nosotros" class="page about" aria-labelledby="about-title">
+
+      <div class="section-meta"><span>06 / NOSOTROS</span><span>PERSONAS DETRÁS DEL PROYECTO</span></div>
+
+      <h2 id="about-title" class="section-title">NOSOTROS</h2>
+
+      <p class="section-intro">Un equipo que trabaja entre la creación, la investigación y el encuentro audiovisual en el Llano.</p>
+
+      <div class="team-grid">
+
+        <button class="person" type="button" data-name="Jonas" data-role="Dirección y creación" data-bio="Aquí irá la biografía definitiva de la primera persona integrante del equipo."><img src="img/FOTOS/Jonas.jpg" alt="Retrato de integrante del equipo"><span>JONAS ↗</span></button>
+
+        <button class="person" type="button" data-name="Juliana" data-role="Producción" data-bio="Aquí irá la biografía definitiva de la segunda persona integrante del equipo."><img src="img/FOTOS/Juliana.jpg" alt="Retrato de integrante del equipo"><span>JULIANA ↗</span></button>
+
+        <button class="person" type="button" data-name="Daniel Tamayo Uribe" data-role="Formación y exhibición" data-bio="Aquí irá la biografía definitiva de la tercera persona integrante del equipo."><img src="img/FOTOS/Daniel Tamayo Uribe.jpg" alt="Retrato de integrante del equipo"><span>DANIEL TAMAYO URIBE ↗</span></button>
+
+      </div>
+
+      <footer class="site-footer"><span>EJERCICIOS DESCONOCIDOS / YOPAL, COLOMBIA</span><a href="#index">VOLVER ARRIBA ↑</a></footer>
+
+    </section>
+
+  </main>
+
+
+
+  <dialog id="bio-dialog" class="bio-dialog" aria-labelledby="bio-name"><button class="dialog-close" type="button" aria-label="Cerrar biografía">✕</button><span id="bio-role"></span><h2 id="bio-name"></h2><p id="bio-text"></p></dialog>
+
+</body>
+
+</html>
